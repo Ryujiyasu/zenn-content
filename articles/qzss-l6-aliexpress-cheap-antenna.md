@@ -6,7 +6,8 @@ topics: ["qzss", "gnss", "rust", "embedded", "rtk"]
 published: true
 ---
 
-![計測セットアップ全体（ヘリカルアンテナ + NEO-D9C Plugin + simpleRTK3B Compass）](/images/setup-overview.jpg)
+![計測セットアップ全体（ヘリカルアンテナ + NEO-D9C Plugin + simpleRTK3B Compass）](/images/setup-overview.jpg =400x)
+*計測セットアップ全体*
 
 ## 要約
 
@@ -30,10 +31,10 @@ u-blox純正のL1〜L6マルチバンドGNSSアンテナ `ANN-MB2-00`（¥13,860
 
 価格比はB = A × 0.24、C = A × 0.43。
 
-![A: u-blox ANN-MB2-00（純正パッチ型）](/images/ann-mb2-00-patch.jpg)
+![A: u-blox ANN-MB2-00（純正パッチ型）](/images/ann-mb2-00-patch.jpg =400x)
 *A: u-blox ANN-MB2-00 — パッチ型のリファレンス機。*
 
-![B/C: ヘリカル型の側面](/images/helical-side.jpg)
+![B/C: ヘリカル型の側面](/images/helical-side.jpg =400x)
 *B / C: ヘリカル型（細長い円柱）。スマホ筐体への収まりが良い。*
 
 ## 計測構成
@@ -80,7 +81,7 @@ pub fn parse(payload: &[u8]) -> Result<Self, QzssL6Error> {
 
 B（TAN1216Q50）の現物ラベルを撮ったらこう書いてある:
 
-![B: TAN1216Q50 の底面ラベル — L6 の表記が無く E6 まで](/images/tan1216q50-label.jpg)
+![B: TAN1216Q50 の底面ラベル — L6 の表記が無く E6 まで](/images/tan1216q50-label.jpg =500x)
 *B: TAN1216Q50 の底面ラベル。`GNSS L1/L2/L5 B1/B2/B3 E1/E5/E6` と書かれているが「L6」は無い。*
 
 ```
@@ -92,7 +93,7 @@ GNSS ANTENNA
 
 参考に C（HX-901）の底面ラベル:
 
-![C: HX-901 の底面ラベル](/images/hx901-label.jpg)
+![C: HX-901 の底面ラベル](/images/hx901-label.jpg =400x)
 *C: HX-901 の底面ラベル。型番と DC3〜16V、サイズ表記のみで対応バンドの記載なし。*商品タイトルでは「L1 L2 L5 **L6** G1 G2 B1-B3 E1 E5 E6 + L-band」と謳っていたが、現物ラベルは `E6` 止まり。一瞬「やはり広告詐欺か」と思うのだが、実際はL6がしっかり取れている。物理的根拠はこうだ:
 
 - QZSS L6: 中心周波数 **1278.75 MHz**
