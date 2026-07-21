@@ -3,7 +3,7 @@ title: "ブラウザで動く .docx レンダリングエンジンを Word と�
 emoji: "📄"
 type: "tech"
 topics: ["rust", "webassembly", "docx", "ooxml", "テスト"]
-published: false
+published: true
 ---
 
 ![Word / Oxi / LibreOffice / SILURUS の同一ページ比較](/images/oxi-4way-vertical-form.png)
